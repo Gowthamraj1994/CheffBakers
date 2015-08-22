@@ -9,8 +9,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/waterflow"
         android:layout_marginLeft="5dp"
+        android:background="@color/waterflow"
         android:layout_marginRight="5dp"
         android:layout_marginTop="5dp"
         android:orientation="horizontal">
@@ -19,6 +19,8 @@
         android:layout_height="150dp"
         android:id="@+id/imoffer"
         android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
         android:paddingBottom="10dp"
         />
     </LinearLayout>

@@ -11,7 +11,7 @@
         android:title="Offers" />
     <item
         android:id="@+id/weblink_frg"
-        android:icon="@drawable/world"
+        android:icon="@drawable/link"
         android:title="Website" />
     </group>
 </menu>

@@ -1,6 +1,7 @@
 package com.example.gowtham.cheffbakers;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     ImageView imgcity,imgoffers,imgweb;
     RelativeLayout relay_layoutoffer,relay_layoutcity,relay_layoutwebsite;
+    TextView textcity;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
         imgcity = (ImageView) findViewById(R.id.img_city);
         imgoffers = (ImageView) findViewById(R.id.img_offer);
         imgweb = (ImageView) findViewById(R.id.img_world);
+        textcity=(TextView)findViewById(R.id.txt_city);
+       /* Typeface typeface=Typeface.createFromAsset(getResources().getAssets(),"fonts.ttf");
+        textcity.setTypeface(typeface);*/
         relay_layoutoffer = (RelativeLayout) findViewById(R.id.offer_realtive);
         relay_layoutcity = (RelativeLayout) findViewById(R.id.city_realtive);
         relay_layoutwebsite = (RelativeLayout) findViewById(R.id.website_realtive);
@@ -31,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         if(v==relay_layoutoffer || v==relay_layoutcity || v==relay_layoutwebsite){
             Intent intent=new Intent(this,Home.class);
             startActivity(intent);
-            overridePendingTransition(android.R.anim.slide_out_right,android.R.anim.slide_in_left);
+            overridePendingTransition(android.R.anim.slide_out_right, android.R.anim.slide_in_left);
             return;
         }
         else{

@@ -7,14 +7,14 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical"
-        android:background="@color/silver"
-        android:paddingTop="20dp" >
+        >
 
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/mainlogo"/>
+            android:scaleType="fitXY"
+            android:src="@drawable/drawer_img2"/>
     </LinearLayout>
 
 </LinearLayout>

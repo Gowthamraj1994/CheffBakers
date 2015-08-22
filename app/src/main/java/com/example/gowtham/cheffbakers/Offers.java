@@ -25,8 +25,8 @@ import java.util.List;
 public class Offers extends Fragment {
 
 ListView listview;
-    public static int [] prgmImages={R.drawable.cake1,R.drawable.cake2,R.drawable.cake3,R.drawable.cake2,R.drawable.cake1,
-            R.drawable.cake3,R.drawable.cake1,R.drawable.cake2,R.drawable.cake3};
+    public static int [] prgmImages={R.drawable.cake4,R.drawable.cake1,R.drawable.cake4,R.drawable.cake3,R.drawable.cake1,
+            R.drawable.cake4,R.drawable.cake1,R.drawable.cake4,R.drawable.cake3};
 Context context;
     @Nullable
     @Override
