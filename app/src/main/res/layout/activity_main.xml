@@ -1,0 +1,140 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:background="#EBEBEB"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.9"
+                    android:src="@drawable/mainlogo"/>
+                <ImageView
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:paddingRight="20dp"
+                    android:src="@drawable/welcome"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/city_realtive"
+            android:onClick="onclick"
+            android:background="@drawable/city_night">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:id="@+id/img_city"
+                android:src="@drawable/map"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="45dp"
+                android:layout_marginEnd="45dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="CITY"
+                android:id="@+id/textView2"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:textColor="#fff"
+                android:textStyle="bold|italic"
+                android:textSize="35sp"
+                android:textIsSelectable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:id="@+id/offer_realtive"
+            android:onClick="onclick"
+            android:background="#DD4B39">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="95dp"
+                android:gravity="center"
+                android:id="@+id/img_offer"
+                android:src="@drawable/offers1"
+                android:layout_marginRight="224dp"
+                android:layout_marginEnd="224dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="OFFERS"
+                android:textColor="#fff"
+                android:textStyle="bold|italic"
+                android:textSize="35sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="32dp"
+                android:layout_marginEnd="32dp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:id="@+id/website_realtive"
+            android:onClick="onclick"
+            android:background="@drawable/website">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:id="@+id/img_world"
+                android:layout_marginLeft="209dp"
+                android:layout_marginStart="209dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+           <!-- <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="WEBSITE"
+                android:textColor="#fff"
+                android:textStyle="bold|italic"
+                android:textSize="35sp"
+                android:id="@+id/textView"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp" />-->
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
